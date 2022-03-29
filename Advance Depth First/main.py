@@ -20,8 +20,6 @@ def dfs(graph, start, end, way, visited):
       answer = dfs(graph, next, end, way, visited)
       if answer is not None:
         return answer
-    way.pop()
-  return None
 
 result = []
 start = input("Enter starting node (btw A and F) : ")
